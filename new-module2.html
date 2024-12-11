@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Page 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Dummy Page 3</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="alert('Home clicked!')">Home</a></li>
+                <li><a href="#" onclick="alert('About clicked!')">About</a></li>
+                <li><a href="#" onclick="alert('Contact clicked!')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Section 1</h2>
+            <p>This is some dummy content for the first section.</p>
+        </section>
+        
+        <section>
+            <h2>Section 2</h2>
+            <p>This is some dummy content for the second section.</p>
+        </section>
+        
+        <section>
+            <h2>Section 3</h2>
+            <p>This is some dummy content for the third section.</p>
+        </section>
+        
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Dummy Page</p>
+    </footer>
+
+    <script>
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 
+                document.body.style.backgroundColor === 'lightblue' ? '#f4f4f4' : 'lightblue';
+        }
+    </script>
+</body>
+</html>
